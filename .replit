@@ -1,2 +1,2 @@
 language = "csharp"
-run = "msbuild && mono LabyrinthApp/bin/Debug/LabyrinthApp.exe"
+run = "msbuild /p:Configuration=Debug && mono packages/NUnit.ConsoleRunner.3.11.1/tools/nunit3-console.exe MinMaxTask.Tests/bin/Debug/MinMaxTask.Tests.dll"
